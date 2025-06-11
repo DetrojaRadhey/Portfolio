@@ -289,7 +289,7 @@ const Index = () => {
                 View Projects
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <a href="/RADHEY_DETROJA.pdf" download target="_blank" rel="noopener noreferrer">
+              <a href="/Radhey_Detroja.pdf" download target="_blank" rel="noopener noreferrer">
                 <Button variant="outline">
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume

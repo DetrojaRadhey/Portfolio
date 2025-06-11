@@ -25,7 +25,7 @@ const Index = () => {
     {
       title: "Roadside Assistance Platform",
       description: "Location-aware web app offering real-time mechanical/medical help and peer-based assistance via Chrome extension with IoT-based emergency trigger and sub-second spatial queries using MongoDB 2dsphere.",
-      image: "../../public/roadsideassistance.png",
+      image: "/roadsideassistance.png",
       tech: ["React", "Node.js", "MongoDB", "WebSocket", "IoT"],
       github: "#",
       demo: "#",
@@ -34,7 +34,7 @@ const Index = () => {
     {
       title: "Social Media Analyzer Chatbot",
       description: "AI-powered chatbot for analyzing social media engagement and trends using Langflow-driven natural language insights with interactive conversational UI and data processing from multiple platforms.",
-      image: "../../public/bot.png",
+      image: "/bot.png",
       tech: ["Langflow", "React", "Node.js", "MongoDB", "AI"],
       github: "#",
       demo: "#",
@@ -289,7 +289,7 @@ const Index = () => {
                 View Projects
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <a href="../../public/RADHEY_DETROJA.pdf" download target="_blank" rel="noopener noreferrer">
+              <a href="/RADHEY_DETROJA.pdf" download target="_blank" rel="noopener noreferrer">
                 <Button variant="outline">
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume
@@ -350,7 +350,7 @@ const Index = () => {
               className="group"
             >
               <img
-                src="../../public/Profile_Pic.jpg"
+                src="/Profile_Pic.jpg"
                 alt="Radhey Detroja"
                 className="rounded-lg shadow-2xl mx-auto transition-transform duration-300 group-hover:scale-105 group-hover:shadow-purple-500/25"
               />

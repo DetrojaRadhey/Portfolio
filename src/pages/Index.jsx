@@ -700,23 +700,23 @@ const Index = () => {
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
                   <motion.a
                     variants={itemVariants}
-                    href="mailto:radhey@example.com"
+                    href="mailto:radheydetroja@gmail.com"
                     className="flex flex-col items-center space-y-4 p-6 rounded-lg hover:bg-gray-700/50 transition-all duration-300 group hover:scale-110"
                   >
-                    <Mail className="h-8 w-8 text-purple-400 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" />
-                    <span className="font-medium group-hover:text-purple-400 transition-colors duration-300">Email</span>
-                    <span className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">radhey@example.com</span>
+                    <Mail className="h-8 w-8 text-red-400 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" />
+                    <span className="font-medium text-gray-400 group-hover:text-red-400 transition-colors duration-300">Email</span>
+                    <span className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">radheydetroja@gmail.com</span>
                   </motion.a>
 
                   <motion.a
                     variants={itemVariants}
-                    href="https://www.linkedin.com/in/radhey-detroja-4308a8255/"
+                    href="https://www.linkedin.com/in/radheydetroja/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex flex-col items-center space-y-4 p-6 rounded-lg hover:bg-gray-700/50 transition-all duration-300 group hover:scale-110"
                   >
                     <Linkedin className="h-8 w-8 text-blue-400 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" />
-                    <span className="font-medium group-hover:text-blue-400 transition-colors duration-300">LinkedIn</span>
+                    <span className="font-medium text-gray-400 group-hover:text-blue-400 transition-colors duration-300">LinkedIn</span>
                     <span className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">@radheydetroja</span>
                   </motion.a>
 
@@ -728,18 +728,21 @@ const Index = () => {
                     className="flex flex-col items-center space-y-4 p-6 rounded-lg hover:bg-gray-700/50 transition-all duration-300 group hover:scale-110"
                   >
                     <Github className="h-8 w-8 text-gray-400 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" />
-                    <span className="font-medium group-hover:text-gray-300 transition-colors duration-300">GitHub</span>
-                    <span className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">@radheydetroja</span>
+                    <span className="font-medium text-gray-400 group-hover:text-gray-300 transition-colors duration-300">GitHub</span>
+                    <span className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">@detrojaradhey</span>
                   </motion.a>
 
-                  <motion.div
+                  <motion.a
                     variants={itemVariants}
+                    href="https://leetcode.com/u/detrojaradhey1205/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex flex-col items-center space-y-4 p-6 rounded-lg hover:bg-gray-700/50 transition-all duration-300 group hover:scale-110"
                   >
-                    <MapPin className="h-8 w-8 text-green-400 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" />
-                    <span className="font-medium group-hover:text-green-400 transition-colors duration-300">Location</span>
-                    <span className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">Gujarat, India</span>
-                  </motion.div>
+                    <Code className="h-8 w-8 text-yellow-400 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" />
+                    <span className="font-medium text-gray-400 group-hover:text-yellow-300 transition-colors duration-300">LeetCode</span>
+                    <span className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">@detrojaradhey1205</span>
+                  </motion.a>
                 </div>
               </CardContent>
             </Card>

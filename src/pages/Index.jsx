@@ -17,7 +17,7 @@ const Index = () => {
     { name: "TypeScript", level: 75, color: "bg-blue-600" },
     { name: "MongoDB", level: 80, color: "bg-emerald-500" },
     { name: "Express.js", level: 78, color: "bg-gray-600" },
-    { name: "Data structures and algorithms", level: 75, color: "bg-purple-500" },
+    { name: "Golang", level: 82, color: "bg-purple-500" },
     { name: "PostgreSQL", level: 72, color: "bg-blue-700" }
   ];
 

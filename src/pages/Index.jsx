@@ -10,16 +10,44 @@ const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
 
-  const skills = [
-    { name: "JavaScript", level: 90, color: "bg-yellow-500" },
-    { name: "React.js", level: 85, color: "bg-blue-500" },
-    { name: "Node.js", level: 80, color: "bg-green-500" },
-    { name: "TypeScript", level: 75, color: "bg-blue-600" },
-    { name: "MongoDB", level: 80, color: "bg-emerald-500" },
-    { name: "Express.js", level: 78, color: "bg-gray-600" },
-    { name: "Golang", level: 82, color: "bg-purple-500" },
-    { name: "PostgreSQL", level: 72, color: "bg-blue-700" }
+  // Modernized Skills grouped by type for attractive UI
+  const skillsData = [
+    {
+      group: 'Languages',
+      color: 'bg-yellow-500',
+      skills: [
+        'JavaScript', 'Python', 'Golang'
+      ]
+    },
+    {
+      group: 'Core CS',
+      color: 'bg-pink-400',
+      skills: ['Data Structures and Algorithms', 'Computer Networking']
+    },
+    {
+      group: 'Frontend',
+      color: 'bg-blue-500',
+      skills: ['React.js', 'Redux', 'Tailwind CSS']
+    },
+    {
+      group: 'Backend / Frameworks',
+      color: 'bg-green-500',
+      skills: ['Node.js', 'Express.js', 'Lang Chain', 'Flask', 'Gin', 'WebSockets']
+    },
+    {
+      group: 'Databases',
+      color: 'bg-indigo-500',
+      skills: ['MongoDB', 'PostgreSQL', 'SQLite', 'Redis']
+    },
+    {
+      group: 'Other Tools',
+      color: 'bg-purple-500',
+      skills: [
+        'Git', 'GitHub', 'Docker', 'Gorm', 'Prisma', 'N8N', 'Langflow', 'Tesseract.js'
+      ]
+    },
   ];
+
 
   const projects = [
     {
@@ -89,13 +117,13 @@ const Index = () => {
     },
     {
       title: "Open Source",
-      description: "Active contributor to Scribbler JS Notebook project",
+      description: "Contributor to Odoo & Scribbler JS Notebook project",
       icon: Github,
       color: "text-green-400"
     },
     {
       title: "Problem Solver",
-      description: "Solved 160+ DSA Problems on LeetCode",
+      description: "Solved 200+ DSA Problems on LeetCode",
       icon: Code,
       color: "text-purple-400"
     }
@@ -273,7 +301,7 @@ const Index = () => {
               transition={{ delay: 0.7 }}
               className="text-lg text-gray-400 mb-8 max-w-4xl mx-auto leading-relaxed"
             >
-              I'm a 6th-semester Computer Engineering student at Charotar University of Science and Technology with a CGPA of 8.0. I specialize in full-stack development using the MERN stack and have hands-on experience building AI-integrated and real-time web applications. I'm passionate about solving problems through code, contributing to open-source, and competing in hackathons.
+              Software Engineer at Odoo India Pvt. Ltd. | Computer Engineering student at CHARUSAT (CGPA: 8.08). Experienced in building full-stack real-time applications and automation tools, with a passion for problem-solving, open-source contributions, and hackathons.
             </motion.p>
 
             <motion.div
@@ -352,7 +380,7 @@ const Index = () => {
               <img
                 src="/Profile_Pic.jpg"
                 alt="Radhey Detroja"
-                className="rounded-lg shadow-2xl mx-auto transition-transform duration-300 group-hover:scale-105 group-hover:shadow-purple-500/25"
+                className="rounded-lg size-[70%] shadow-2xl mx-auto transition-transform duration-300 group-hover:scale-105 group-hover:shadow-purple-500/25"
               />
             </motion.div>
 
@@ -371,19 +399,18 @@ const Index = () => {
                 <p className="text-lg text-gray-300">
                   <strong>Charotar University of Science and Technology</strong><br />
                   B.Tech in Computer Engineering<br />
-                  CGPA: 8.0 (6th Semester)
+                  CGPA: 8.08 (8th Semester)
                 </p>
               </motion.div>
 
               <motion.div variants={itemVariants} className="space-y-4 hover:bg-gray-700/30 p-4 rounded-lg transition-all duration-300">
                 <h3 className="text-xl font-semibold flex items-center space-x-3">
                   <Code className="text-blue-400 hover:scale-110 transition-transform duration-300" size={24} />
-                  <span>Internship Experience</span>
+                  <span>Experience</span>
                 </h3>
                 <p className="text-lg text-gray-300">
-                  <strong>IvotionTech, Ahmedabad</strong><br />
-                  MERN Stack Intern (4-6 weeks)<br />
-                  Built internal tools, explored real-world app architecture, and implemented secure login systems.
+                  <strong>Odoo India Pvt. Ltd., Gandhinagar (Current)</strong><br />
+                  Working on an open-source ERP system, contributing to the development and customization of business modules using a three-layered architecture (Presentation, Business Logic, Data Layer).
                 </p>
               </motion.div>
 
@@ -394,7 +421,7 @@ const Index = () => {
                 </div>
                 <div className="flex items-center space-x-2 hover:bg-gray-700/30 p-3 rounded-lg transition-all duration-300 hover:scale-105">
                   <Palette className="text-pink-400" size={20} />
-                  <span>AI Integration</span>
+                  <span>AI & Automation Scipts</span>
                 </div>
                 <div className="flex items-center space-x-2 hover:bg-gray-700/30 p-3 rounded-lg transition-all duration-300 hover:scale-105">
                   <Smartphone className="text-blue-400" size={20} />
@@ -426,93 +453,35 @@ const Index = () => {
             <motion.div variants={itemVariants} className="w-20 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto rounded-full" />
           </motion.div>
 
+          {/* Modern Skills Grid */}
           <motion.div
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid md:grid-cols-2 gap-8 mb-12"
+            className="grid md:grid-cols-3 gap-8 mb-12"
           >
-            {skills.map((skill, index) => (
-              <motion.div key={skill.name} variants={itemVariants} className="space-y-2 hover:bg-gray-800/50 p-4 rounded-lg transition-all duration-300 hover:scale-105">
-                <div className="flex justify-between">
-                  <span className="text-lg font-medium">{skill.name}</span>
-                  <span className="text-gray-400">{skill.level}%</span>
-                </div>
-                <div className="w-full bg-gray-700 rounded-full h-3 overflow-hidden hover:h-4 transition-all duration-300">
-                  <motion.div
-                    initial={{ width: 0 }}
-                    whileInView={{ width: `${skill.level}%` }}
-                    transition={{ duration: 1, delay: index * 0.1 }}
-                    className={`h-full ${skill.color} rounded-full hover:shadow-lg transition-all duration-300`}
-                  />
+            {skillsData.map((group, i) => (
+              <motion.div
+                key={group.group}
+                variants={itemVariants}
+                className="bg-gray-800/60 rounded-2xl p-6 shadow-md hover:shadow-xl border border-transparent hover:border-purple-400 transition-all duration-300 group flex flex-col items-center text-center"
+              >
+                <span className={`mb-3 text-lg font-bold py-1 px-4 rounded-full ${group.color} text-white bg-opacity-90 shadow-lg tracking-wide`}>{group.group}</span>
+                <div className="flex flex-wrap gap-2 justify-center mt-2">
+                  {group.skills.map(skill => (
+                    <Badge
+                      key={skill}
+                      className={`px-4 py-2 rounded-xl text-sm font-semibold bg-gradient-to-r from-gray-700 to-gray-800 border-2 border-purple-500/20 text-purple-200 hover:bg-purple-700/40 hover:scale-110 transition-all duration-300 group-hover:border-purple-400 cursor-pointer`}
+                    >
+                      {skill}
+                    </Badge>
+                  ))}
                 </div>
               </motion.div>
             ))}
           </motion.div>
 
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="grid md:grid-cols-3 gap-8"
-          >
-            <motion.div variants={itemVariants} className="hover:bg-gray-800/50 p-6 rounded-lg transition-all duration-300 hover:scale-105">
-              <h3 className="text-xl font-semibold mb-4 text-purple-400">Frontend</h3>
-              <div className="flex flex-wrap gap-2">
-                {[
-                  "React.js",
-                  "Data structures and algorithms",
-                  "Vite",
-                  "HTML5",
-                  "CSS3",
-                  "TailwindCSS",
-                  "Bootstrap"
-                ].map((tech) => (
-                  <Badge key={tech} variant="secondary" className="bg-purple-500/20 text-purple-300 border-purple-500/30 hover:bg-purple-500/30 hover:scale-110 transition-all duration-300 cursor-pointer">
-                    {tech}
-                  </Badge>
-                ))}
-              </div>
-            </motion.div>
-
-            <motion.div variants={itemVariants} className="hover:bg-gray-800/50 p-6 rounded-lg transition-all duration-300 hover:scale-105">
-              <h3 className="text-xl font-semibold mb-4 text-blue-400">Backend & Database</h3>
-              <div className="flex flex-wrap gap-2">
-                {[
-                  "Node.js",
-                  "Express.js",
-                  "MongoDB",
-                  "PostgreSQL",
-                  "Redis",
-                  "WebSocket"
-                ].map((tech) => (
-                  <Badge key={tech} variant="secondary" className="bg-blue-500/20 text-blue-300 border-blue-500/30 hover:bg-blue-500/30 hover:scale-110 transition-all duration-300 cursor-pointer">
-                    {tech}
-                  </Badge>
-                ))}
-              </div>
-            </motion.div>
-
-            <motion.div variants={itemVariants} className="hover:bg-gray-800/50 p-6 rounded-lg transition-all duration-300 hover:scale-105">
-              <h3 className="text-xl font-semibold mb-4 text-green-400">Tools & AI</h3>
-              <div className="flex flex-wrap gap-2">
-                {[
-                  "Git",
-                  "Docker",
-                  "Langflow",
-                  "LangGraph",
-                  "Gemini API",
-                  "Tesseract.js"
-                ].map((tech) => (
-                  <Badge key={tech} variant="secondary" className="bg-green-500/20 text-green-300 border-green-500/30 hover:bg-green-500/30 hover:scale-110 transition-all duration-300 cursor-pointer">
-                    {tech}
-                  </Badge>
-                ))}
-              </div>
-            </motion.div>
-          </motion.div>
         </div>
       </section>
 
@@ -755,7 +724,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="text-gray-400 hover:text-gray-300 transition-colors duration-300">
-              © 2024 Radhey Detroja. Built with React.js and shadcn/ui
+              © 2026 Built with 💖 by Radhey Detroja
             </p>
           </div>
         </div>

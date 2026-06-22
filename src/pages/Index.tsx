@@ -16,7 +16,7 @@ const Index = () => {
       group: 'Languages',
       color: 'bg-yellow-500',
       skills: [
-        'JavaScript', 'Python', 'Golang'
+        'JavaScript', 'TypeScript', 'Python', 'Golang'
       ]
     },
     {
@@ -27,23 +27,23 @@ const Index = () => {
     {
       group: 'Frontend',
       color: 'bg-blue-500',
-      skills: ['React.js', 'Redux', 'Tailwind CSS']
+      skills: ['React.js', 'Next.js', 'Redux', 'Tailwind CSS']
     },
     {
       group: 'Backend / Frameworks',
       color: 'bg-green-500',
-      skills: ['Node.js', 'Express.js', 'Lang Chain', 'Flask', 'Gin', 'WebSockets']
+      skills: ['Node.js', 'Express.js', 'Flask', 'Gin', 'WebSockets']
     },
     {
       group: 'Databases',
       color: 'bg-indigo-500',
-      skills: ['MongoDB', 'PostgreSQL', 'SQLite', 'Redis']
+      skills: ['MongoDB', 'PostgreSQL', 'SQLite', 'Redis', 'Supabase']
     },
     {
       group: 'Other Tools',
       color: 'bg-purple-500',
       skills: [
-        'Git', 'GitHub', 'Docker', 'Gorm', 'Prisma', 'N8N', 'Langflow', 'Tesseract.js'
+        'Git', 'Docker', 'Vercel', 'Prisma', 'N8N', 'Lang Chain', 'Tesseract.js'
       ]
     },
   ];
@@ -304,7 +304,7 @@ const Index = () => {
               transition={{ delay: 0.7 }}
               className="text-lg text-gray-400 mb-8 max-w-4xl mx-auto leading-relaxed"
             >
-              Software Engineer at Odoo India Pvt. Ltd. | Computer Engineering student at CHARUSAT (CGPA: 8.08). Experienced in building full-stack real-time applications and automation tools, with a passion for problem-solving, open-source contributions, and hackathons.
+              Software Engineer at Odoo India Pvt. Ltd. | Computer Engineering student at CHARUSAT (CGPA: 8.17). Experienced in building full-stack real-time applications and automation tools, with a passion for problem-solving, open-source contributions, and hackathons.
             </motion.p>
 
             <motion.div
@@ -402,7 +402,7 @@ const Index = () => {
                 <p className="text-lg text-gray-300">
                   <strong>Charotar University of Science and Technology</strong><br />
                   B.Tech in Computer Engineering<br />
-                  CGPA: 8.08 (8th Semester)
+                  CGPA: 8.17 (8th Semester)
                 </p>
               </motion.div>
 
@@ -412,8 +412,8 @@ const Index = () => {
                   <span>Experience</span>
                 </h3>
                 <p className="text-lg text-gray-300">
-                  <strong>Odoo India Pvt. Ltd., Gandhinagar (Current)</strong><br />
-                  Working on an open-source ERP system, contributing to the development and customization of business modules using a three-layered architecture (Presentation, Business Logic, Data Layer).
+                  <strong>Odoo India Pvt. Ltd., Gandhinagar</strong><br />
+                  Contributed to Odoo’s Discuss module enhancements across messaging, meetings, notifications and developed business logic, test cases, and upgrade scripts.
                 </p>
               </motion.div>
 

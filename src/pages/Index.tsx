@@ -304,7 +304,7 @@ const Index = () => {
               transition={{ delay: 0.7 }}
               className="text-lg text-gray-400 mb-8 max-w-4xl mx-auto leading-relaxed"
             >
-              Software Engineer at Odoo India Pvt. Ltd. | Computer Engineering student at CHARUSAT (CGPA: 8.17). Experienced in building full-stack real-time applications and automation tools, with a passion for problem-solving, open-source contributions, and hackathons.
+              SDE intern at Odoo India Pvt. Ltd. | Computer Engineering student at CHARUSAT (CGPA: 8.17). Experienced in building full-stack real-time applications and automation tools, with a passion for problem-solving, open-source contributions, and hackathons.
             </motion.p>
 
             <motion.div
